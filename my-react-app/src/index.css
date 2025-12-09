@@ -1,0 +1,61 @@
+body {
+  font-family: Inter, Roboto, Arial, sans-serif;
+  margin: 16px;
+  background: #f3f6fb;
+  color: #111;
+}
+
+.app header {
+  margin-bottom: 12px;
+}
+
+h1 { margin: 0; font-size: 1.6rem; }
+.subtitle { margin: 4px 0 12px; color: #444; }
+
+.analyzer-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.analyzer-form input {
+  width: 420px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.analyzer-form button {
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 12px;
+}
+
+.panel {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(14,20,30,0.06);
+}
+
+.results pre.headers {
+  max-height: 160px;
+  overflow: auto;
+  background: #fafafa;
+  padding: 8px;
+}
+
+.sim-event { margin-bottom: 12px; border-left: 3px solid #d0d7ff; padding-left: 10px; }
+.sim-visual .box {
+  margin-top: 8px;
+  padding: 12px;
+  background: #eef2ff;
+  border-radius: 6px;
+  text-align: center;
+}
+footer { margin-top: 14px; color: #666; }
