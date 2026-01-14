@@ -1,8 +1,4 @@
-// simulator.js
-/**
- * createSimulation: based on analysis, returns an array of safe simulation events
- * Each event has: type, title, description, steps (for frontend animation)
- */
+
 function createSimulation(analysis) {
   const events = [];
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="no-referrer">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+
+    <title>Безопасная тестовая страница</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 40px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Безопасная страница</h1>
+
+    <p>
+        Эта тестовая HTML-страница демонстрирует пример
+        корректной конфигурации безопасности веб-приложения.
+    </p>
+
+    <h2>Форма с защитой</h2>
+
+    <form method="POST" action="#">
+        
+        <input type="hidden" name="csrf_token" value="secureRandomToken123">
+
+        <label>
+            Имя пользователя:<br>
+            <input type="text" name="username" required>
+        </label><br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Cookies (пример)</h2>
+    <p>
+        Cookies должны использовать атрибуты
+        <strong>Secure</strong>, <strong>HttpOnly</strong> и <strong>SameSite</strong>.
+    </p>
+</div>
+
+</body>
+</html>
